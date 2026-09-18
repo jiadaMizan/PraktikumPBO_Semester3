@@ -17,7 +17,7 @@ public class Main11 {
         bank.printAllAccounts();
         System.out.println();
         
-        Account11[] found = bank.findAccountsByOwnerName("Nadia");
+        Account11[] found = bank.findAccountsByOwnerName("Nada");
         if (found != null && found.length > 0) {
             System.out.println("===== Show Account Named : " + found[0].getOwnerN().getName() + " =====");
             System.out.println("Amount Accounts Found    : " + found.length);
@@ -25,7 +25,7 @@ public class Main11 {
                 acc.printInfo();
             }
         } else {
-            System.out.println("Account With Name: " + found[0].getOwnerN().getName() + " Not Found");
+            System.out.println("Account With That Name Not Found");
         }
     }
 }
